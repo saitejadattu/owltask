@@ -1,0 +1,62 @@
+GET http://localhost:3006/user/allusers
+
+###
+POST http://localhost:3006/user/signup 
+Content-Type: application/json
+
+{
+    "username": "teja0",
+    "email": "teja1@gmail.com",
+    "password": "teja0"
+}
+
+###
+POST http://localhost:3006/user/login
+Content-Type: application/json
+
+{
+    "email": "teja0@gmail.com",
+    "password": "teja0#"
+}
+
+###
+PATCH http://localhost:3006/user/update/e6b5b5bc-7973-4335-a0ba-d29540df58c4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.and0VG9rZW4.xkvnFPBZJjzY-6y57yGuTl1-7Zk6C2Z2nocm9yWcQpg
+Content-Type: application/json
+
+{
+    "username": "teja",
+    "password": "teja0#"
+}
+
+###
+DELETE http://localhost:3006/user/delete/41c58204-de9e-4f43-94ae-e56fc40ed502
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.and0VG9rZW4.xkvnFPBZJjzY-6y57yGuTl1-7Zk6C2Z2nocm9yWcQpg
+
+###
+GET http://localhost:3006/user/get/task/e6b5b5bc-7973-4335-a0ba-d29540df58c4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.and0VG9rZW4.xkvnFPBZJjzY-6y57yGuTl1-7Zk6C2Z2nocm9yWcQpg
+
+###
+POST http://localhost:3006/user/add/task/638c9f09-7772-4fa6-9391-7e82e009e770
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.and0VG9rZW4.xkvnFPBZJjzY-6y57yGuTl1-7Zk6C2Z2nocm9yWcQpg
+Content-Type: application/json
+
+{
+    "task_title": "iam learing react.js",
+    "status": "in progress"
+}
+
+###
+PATCH  http://localhost:3006/user/update/task/e6b5b5bc-7973-4335-a0ba-d29540df58c4/5ca0962e-4af4-4fb0-9cad-6418ad090461
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.and0VG9rZW4.xkvnFPBZJjzY-6y57yGuTl1-7Zk6C2Z2nocm9yWcQpg
+Content-Type: application/json
+
+{
+    "task_title": "iam learned python",
+    "status": "completed"
+}
+
+###
+DELETE http://localhost:3006/user/delete/task/e6b5b5bc-7973-4335-a0ba-d29540df58c4/5ca0962e-4af4-4fb0-9cad-6418ad090461
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.and0VG9rZW4.xkvnFPBZJjzY-6y57yGuTl1-7Zk6C2Z2nocm9yWcQpg

@@ -1,0 +1,45 @@
+.login-bg-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 40, 40);
+}
+.login-container{
+    width: 60%;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.in-input{
+    width: 91%;
+    padding: 15px;
+    border-color: transparent;
+    outline: none;
+    border-radius: 5px;
+}
+label{
+    font-size: 15px;
+    font-weight: 400;
+}
+.submit-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    
+}
+button[value="signup"]{
+    border: 0px;
+    border-radius: 5px;
+    align-self: flex-end;
+    padding: 10px;
+    background-color: blueviolet;
+    color: #ffff;
+}
+.error-msg{
+    color: red;
+    font-weight: 400;
+    align-self: flex-end;
+}
